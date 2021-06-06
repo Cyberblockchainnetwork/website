@@ -167,12 +167,12 @@ a.active,a.hover{
 }
 
 .box{
-  width: 400px;
+  width: 45%;
   float: right;
 }
 
 .inbox{
-  width: 600px;
+  width: 55%;
   float: left;
 }
 
