@@ -121,6 +121,10 @@ a.active,a.hover{
     width: 400px;
   }
 
+  .text{
+    width: 400px;
+  }
+
   .net{
     display: flex;
     flex-direction: column;
