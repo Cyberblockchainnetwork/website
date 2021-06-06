@@ -1,0 +1,316 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+  background:url(img/index/oip.jpg);
+  box-sizing: border-box;
+}
+
+nav{
+  background:  linear-gradient(black 20%, darkblue 80%);
+  height: 80px;
+  width: 100%;
+}
+
+label img{
+  width: 14%;
+  margin-left: 1%;
+  height: 70px;
+}
+
+label.logo{
+  height: 70px;
+  width: 100px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a:hover{
+  border: 3px solid blue;
+  color: lightblue;
+  background: blue;
+  transition: .3s;
+}
+
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active,a.hover{
+  background: blue;
+  transition: .5s;
+}
+
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none
+}
+
+@media (max-width:858px) {
+  .checkbtn{
+    display: block;
+  }
+
+  ul{
+    position: fixed;
+    background: black;
+    width: 100%;
+    height: 100vh;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
+
+  nav ul li a{
+    font-size: 20px;
+  }
+
+  a:hover,a.active{
+    background: none;
+    color: blue;
+  }
+
+  #check:checked ~ ul{
+    left: 0;
+  }
+
+  .contanier{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box,.inbox{
+    width: 100%;
+  }
+
+  .net{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .left{
+    width: 100%;
+  }
+
+  .right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .sright,.tright{
+    width: 100%;
+  }
+
+  .sright li {
+    margin-top: 10px;
+  }
+
+}
+
+  .contanier{
+    width: 1300px;
+    margin: auto;
+    overflow: hidden;
+    background-size: cover;
+  }
+
+  .contanier::after{
+    clear: both;
+    display: table;
+    content: '';
+  }
+
+  .box{
+    width: 500px;
+    float: left;
+  }
+
+  .box img{
+    width: 350px;
+    margin-left: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .inbox{
+    width: 600px;
+    float: right;
+  }
+
+  .text{
+    width: 100%;
+    background: linear-gradient(blue 20%,darkblue 80%);
+    border-radius: 5px;
+  }
+
+  .text h2{
+    text-shadow: 0 0 20px white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    border-bottom: solid grey 3px;
+  }
+
+  .text p{
+    color: white;
+    text-shadow: 0 0 20px white;
+    font-size: 18px;
+    margin-top: 15px;
+    box-shadow: 0 0 20px blue;
+  }
+
+  footer{
+    width: 100%;
+    background: black;
+  }
+
+  .net{
+    width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    background-size: cover;
+  }
+
+  .net::after{
+    clear: both;
+    display: table;
+    content: '';
+  }
+
+  .left{
+    float: left;
+    width: 400px;
+  }
+
+  .right{
+    float: right;
+    width: 600px;
+  }
+
+  .right::after{
+    clear: both;
+    display: table;
+    content: '';
+  }
+
+  .sright{
+    float: left;
+    width: 300px;
+  }
+
+  .sright li{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-top: 19px;
+    margin-bottom: 19px;
+  }
+
+  .sright li:hover{
+    text-decoration: underline;
+  }
+
+  .sright li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .sright li a:hover{
+    color: blue;
+    transition: .5s;
+  }
+
+  .sright small{
+    font-size: 20px;
+    color: white;
+    text-decoration: underline;
+    margin-left: 20px;
+  }
+
+  .tright{
+    float: right;
+    width: 300px;
+  }
+
+  .tright li{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-top: 19px;
+    margin-bottom: 19px;
+  }
+
+  .tright li:hover{
+    text-decoration: underline;
+  }
+
+  .tright li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .tright li a:hover{
+    color: blue;
+    transition: .5s;
+  }
+
+  .tright small{
+    margin-left: 10px;
+    font-size: 20px;
+    color: white;
+    text-decoration: underline;
+  }
+
+  .tright p{
+    color: white;
+    margin-left: 20px;
+    margin-top: 7px;
+    font-size: 22px;
+  }
+
+  .tright p:hover{
+    color: blue;
+    transition: .7s;
+  }
